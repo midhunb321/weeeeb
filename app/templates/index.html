@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wage Prediction</title>
+</head>
+<body>
+    <h1>Wage Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="overall_rating">Overall Rating:</label>
+        <input type="number" id="overall_rating" name="overall_rating" required><br><br>
+        
+        <label for="positions_encoded">Position (Encoded):</label>
+        <input type="number" id="positions_encoded" name="positions_encoded" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
